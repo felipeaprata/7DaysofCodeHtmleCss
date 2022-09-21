@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --paragraphs-gray: #667085;
+    --tittle-black:#101828;
+    --tittle-red:#8e2424;
+    --btn-red:#661717;
+    --logo-gray:#3a404e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Header*/
+header{
+    height: 80px;
+}
+
+.headerContainer{
+    max-width: 1280px;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 32px 0 32px;
+    margin-top: 18px;
+}
+
+.headerLogo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    margin-top: 8.5px;
+}
+
+.headerLogo a{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--logo-gray);
+    text-decoration: none;
+}
+
+.headerMenu ul{
+    display: flex;
+    align-items: center;
+
+    margin-top: 6px;
+    padding: 0;
+    list-style: none;
+}
+
+.headerMenu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--paragraphs-gray);   
+    padding: 10px 18px;
+}
+
+.headerMenu a:hover{
+    background-color: var(--tittle-red);
+    color: #fff;
+    border-radius: 8px;
+}
+
+
+.headerBtn{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 8.5px;
+}
+
+.headerBtn a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 24px;
+    color: var(--paragraphs-gray);
+}
+
+.headerBtn .btnActive{
+    background-color: var(--tittle-red);
+    padding: 10px 18px;
+    border: 1px solid var(--tittle-red);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, .5);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.headerBtn .btnActive:hover{
+    background-color: var(--btn-red);
+    box-shadow: 1px 1px 2px rgba(16, 24, 40, .5);
+}
+
+/*Titulo*/
+
+.tittle{
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.tittle p{
+    font-weight: 600;
+    color: var(--tittle-red);
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.tittle h1{
+    font-weight: 600;
+    color: var(--tittle-black);
+    font-size: 48px;
+    line-height: 60px;
+    font-style: normal;
+    letter-spacing: -0.02em;
+}
+
+.tittle h5{
+    width: 791px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--paragraphs-gray);
+    font-size: 20px;
+    line-height: 30px;
+    font-style: normal;
+    letter-spacing: -0.02em;
+}
+
+/*Métricas*/
+.metric{
+    height: 288px;
+    padding: 0 0 96px;
+}
+
+.metricContainer{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+    padding: 0 32px;
+    gap: 64px;
+}
+
+.metricItens{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+}
+
+.metricItensTittle{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: var(--tittle-red);
+}
+
+.metricItens h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--tittle-black);
+}
+
+.metricItens p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraphs-gray);
+}
+
+/*Vagas*/
+
+.vacant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 64px;
+}
+
+.vacantTittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+    gap: 32px;
+    height: 138px;
+}
+
+.vacantTittle p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--tittle-red);
+    line-height: 20px;
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    padding: 4px 15px;
+}
+
+.vacantTittle h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--tittle-black);
+    letter-spacing: -0.02;
+}
+
+.vacantTittle h5{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--paragraphs-gray);
+}
+
+.vacantHeader img{
+    margin-top: 70px;
+}
+
+.vacantJobs{
+    max-width: 1280px;
+    width: 100%;
+    height: 940px;
+}
+
+.vacantJobsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+    gap: 64px;
+}
+
+.vacantJobsContent{
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 55px;
+}
+
+.vacantJobsContentItens{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 24px 28px;
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+}
+
+.vacantJobsContent h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--tittle-black);
+}
+
+.vacantJobsContentItens h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--tittle-black);
+}
+
+.vacantJobsContentItensInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.vacantJobsContentItensInfo p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--paragraphs-gray);
+}
+
+/*Depoimentos*/
+
+.brief{
+    padding: 0 0 96px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.briefContainer{
+    width: 1216px;
+    height: 404px;
+    padding: 64px;
+    background-color: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+}
+
+.briefContainerTittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 45px;
+
+}
+
+.briefContainerTittle span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--tittle-red);
+}
+
+.briefContainerTittle h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--tittle-black);
+}
+
+.briefContainerPerson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.briefContainerPerson h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--tittle-black);
+    text-align: center;
+}
+
+.briefContainerPerson p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--paragraphs-gray);
+}
+
+/*Footer*/
+
+footer{
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background-color: #f9fafb;
+}
+
+footer span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #98a2b3;
+}
+
+.formFooter{
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.formFooter h3{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--tittle-black);
+}
+
+.formFooter h5{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--paragraphs-gray);
+}
+
+.formFooterMail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.formFooterMail input{
+    width: 360px;
+    height: 48px;
+    padding: 12px 14px 12px 16px;
+    color: #fff;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.formFooterMail a{
+    height: 48px;
+    background-color: var(--tittle-red);
+    padding: 12px 20px;
+    color: #fff;
+    border: 1px solid var(--tittle-red);
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.formFooterMail a:hover{
+    background-color: var(--btn-red);
+    box-shadow: 1px 1px 2px rgba(16, 24, 40, .5);
+}
